@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.github.kosmologist.a8minutes.MainActivity">
+
+
+    <RelativeLayout
+        android:background="#ffffff"
+        android:padding="0dp"
+        android:elevation="14dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/workout"
+            android:scaleType="centerCrop"
+            android:id="@+id/imageView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tvDiscription"
+            android:layout_alignLeft="@+id/btnInstructions"
+            android:layout_alignStart="@+id/btnInstructions"
+            android:layout_marginBottom="14dp"
+            android:text="Classic"
+            android:textColor="#ffffff"
+            android:textSize="22dp" />
+
+        <TextView
+            android:id="@+id/tvDiscription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btnInstructions"
+            android:layout_alignStart="@+id/btnInstructions"
+            android:layout_below="@+id/imageView"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="10dp"
+            android:text="Scientifically proven to loss weight."
+            android:textColor="@android:color/background_dark" />
+        <Button
+            android:layout_marginLeft="25dp"
+            android:id="@+id/btnInstructions"
+            android:text="instructions"
+            android:background="@android:color/transparent"
+
+            android:layout_below="@+id/tvDiscription"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+        <Button
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/btnInstructions"
+            android:id="@+id/btnStart"
+            android:text="Start"
+            android:background="@android:color/transparent"
+            android:layout_below="@+id/tvDiscription"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
