@@ -51,15 +51,18 @@
             android:id="@+id/btnInstructions"
             android:text="instructions"
             android:background="@android:color/transparent"
-
             android:layout_below="@+id/tvDiscription"
             android:layout_width="wrap_content"
-            android:layout_height="30dp" />
+            android:layout_height="30dp"
+            android:textColor="#FF8C00"
+            android:layout_marginBottom="12dp"/>
         <Button
+            android:layout_marginBottom="12dp"
             android:layout_marginLeft="10dp"
             android:layout_toRightOf="@+id/btnInstructions"
             android:id="@+id/btnStart"
             android:text="Start"
+            android:textColor="#FF8C00"
             android:background="@android:color/transparent"
             android:layout_below="@+id/tvDiscription"
             android:layout_width="wrap_content"
