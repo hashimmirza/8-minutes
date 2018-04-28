@@ -1,5 +1,7 @@
 package io.github.kosmologist.a8minutes.ClassicExercise;
 
+import android.content.Intent;
+import android.graphics.Color;
 import android.media.MediaPlayer;
 import android.os.CountDownTimer;
 import android.speech.tts.TextToSpeech;
@@ -13,6 +15,7 @@ import android.widget.TextView;
 
 import java.util.Locale;
 
+import io.github.kosmologist.a8minutes.MainActivity;
 import io.github.kosmologist.a8minutes.R;
 import pl.droidsonroids.gif.GifImageView;
 
@@ -33,6 +36,20 @@ public class ClassicExerciseActivity extends AppCompatActivity implements TextTo
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_classic_exercise);
+        android.support.v7.widget.Toolbar toolbar =findViewById(R.id.classicToolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Classic");
+        toolbar.setTitleTextColor(Color.parseColor("#ffffff"));
+        toolbar.setNavigationIcon(R.drawable.ic_arrow_back_white_24dp);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+                Intent intent = new Intent(ClassicExerciseActivity.this,MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
         textToSpeech = new TextToSpeech(ClassicExerciseActivity.this, ClassicExerciseActivity.this);
         setUpUI(16000);
     }

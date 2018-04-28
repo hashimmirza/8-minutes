@@ -1,6 +1,7 @@
 package io.github.kosmologist.a8minutes;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -18,7 +19,9 @@ public class MainActivity extends AppCompatActivity {
         android.support.v7.widget.Toolbar toolbar =findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("8 MINUTES");
-        toolbar.setLogo(R.drawable.newlogo);
+        toolbar.setTitleTextColor(Color.parseColor("#ffffff"));
+        toolbar.setNavigationIcon(R.mipmap.ic_launcher);
+
         Button btnClassicInstructions =findViewById(R.id.btnInstructions);
         btnClassicInstructions.setOnClickListener(new View.OnClickListener() {
             @Override

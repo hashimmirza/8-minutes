@@ -6,7 +6,12 @@
     android:layout_height="match_parent"
     android:background="#ffffff"
     tools:context="io.github.kosmologist.a8minutes.ClassicExercise.ClassicExerciseActivity">
-
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/classicToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp"
+        android:background="#ff8c00"/>
 
     <TextView
         android:id="@+id/ready"
@@ -18,12 +23,13 @@
         android:textColor="#ff8c00"
         android:layout_below="@+id/exerciseName"/>
     <TextView
+        android:layout_below="@+id/classicToolbar"
         android:id="@+id/exerciseName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="18sp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="30dp"
         android:text="1/13 JUMPPING JACKS"
         android:textColor="#ff8c00" />
     <ProgressBar
