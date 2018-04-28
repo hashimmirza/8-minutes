@@ -17,8 +17,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ClassicInstructionsActivity" />
-        <activity android:name=".ListOfExerciseActivity"></activity>
+        <activity android:name=".ClassicExercise.ClassicInstructionsActivity" />
+        <activity android:name=".ClassicExercise.ListOfExerciseActivity" />
+        <activity android:name=".ClassicExercise.ClassicExerciseActivity"></activity>
     </application>
 
 </manifest>

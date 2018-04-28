@@ -3,28 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#ff8c00"
     android:layout_height="match_parent"
     tools:context="io.github.kosmologist.a8minutes.SplashActivity">
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/demo"
-        android:scaleType="centerCrop"
-        />
+        android:id="@+id/logo"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="211dp"
+        android:src="@drawable/newlogo" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="100dp"
-        android:text="8 minutes"
-        android:textStyle="bold"
-        android:fontFamily="cursive"
-        android:textColor="#ffffff"
-        android:textSize="75sp"/>
-
-
-
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="230dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/logo"
+       android:layout_centerHorizontal="true"
+        android:layout_marginEnd="54dp"
+        android:layout_marginRight="54dp"
+        android:layout_marginTop="96dp"
+        android:src="@drawable/logotext" />
 </RelativeLayout>

@@ -1,7 +1,9 @@
-package io.github.kosmologist.a8minutes;
+package io.github.kosmologist.a8minutes.ClassicExercise;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import io.github.kosmologist.a8minutes.R;
 
 public class ClassicInstructionsActivity extends AppCompatActivity {
 

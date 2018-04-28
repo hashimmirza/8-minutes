@@ -4,10 +4,10 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.BaseAdapter;
 import android.widget.Button;
-import android.widget.ListView;
+
+import io.github.kosmologist.a8minutes.ClassicExercise.ClassicInstructionsActivity;
+import io.github.kosmologist.a8minutes.ClassicExercise.ListOfExerciseActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,8 +15,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
+        android.support.v7.widget.Toolbar toolbar =findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("8 MINUTES");
+        toolbar.setLogo(R.drawable.newlogo);
         Button btnClassicInstructions =findViewById(R.id.btnInstructions);
         btnClassicInstructions.setOnClickListener(new View.OnClickListener() {
             @Override
