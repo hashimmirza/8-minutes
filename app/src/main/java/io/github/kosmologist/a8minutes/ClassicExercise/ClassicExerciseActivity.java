@@ -1,17 +1,22 @@
 package io.github.kosmologist.a8minutes.ClassicExercise;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.media.MediaPlayer;
 import android.os.CountDownTimer;
 import android.speech.tts.TextToSpeech;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Locale;
 
@@ -30,6 +35,7 @@ public class ClassicExerciseActivity extends AppCompatActivity implements TextTo
     public ProgressBar progressBar;
     public int exeRestNum = 0;
     public int exeNum = 0;
+    public MediaPlayer mp ;
     int hash=0;
 
     @Override
@@ -44,9 +50,7 @@ public class ClassicExerciseActivity extends AppCompatActivity implements TextTo
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                finish();
-                Intent intent = new Intent(ClassicExerciseActivity.this,MainActivity.class);
-                startActivity(intent);
+                AlertDialogCreate();
             }
         });
 
@@ -146,12 +150,17 @@ public class ClassicExerciseActivity extends AppCompatActivity implements TextTo
             }
         }
         if (startTime == 31000) {
-            MediaPlayer mp = MediaPlayer.create(getApplicationContext(), R.raw.whistle_sound);
+            mp = MediaPlayer.create(getApplicationContext(), R.raw.whistle_sound);
             mp.start();
         }
 
 
         CountDownTimer countDownTimer = new CountDownTimer(time, 1000) {
+
+            private void endSpeeking(){
+                cancel();
+            }
+
             @Override
             public void onTick(long l) {
 
@@ -267,4 +276,35 @@ public class ClassicExerciseActivity extends AppCompatActivity implements TextTo
         tempSpeech = tempSpeech1;
     }
 
+
+    public void AlertDialogCreate(){
+
+        new AlertDialog.Builder(ClassicExerciseActivity.this)
+                .setIcon(R.mipmap.ic_launcher)
+                .setTitle("8 MINUTES")
+                .setMessage("Are you sure Exit 8 MINUTES Workout ? ")
+                .setPositiveButton("OK", null)
+                .setNegativeButton("Cancel", null)
+                .setPositiveButton("OK", new DialogInterface.OnClickListener()
+                {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which)
+                    {
+                        setTempSpeech("");
+                        if (mp != null){
+
+                            mp.stop();
+                        }
+                        finish();
+
+                    }
+                })
+                .setNegativeButton("Cancel", new DialogInterface.OnClickListener()
+                {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which)
+                    {
+                    }
+                }).show();
+    }
 }
