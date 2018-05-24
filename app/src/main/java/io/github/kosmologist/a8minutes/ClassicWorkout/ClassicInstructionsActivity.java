@@ -1,4 +1,4 @@
-package io.github.kosmologist.a8minutes.ClassicExercise;
+package io.github.kosmologist.a8minutes.ClassicWorkout;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import io.github.kosmologist.a8minutes.MainActivity;
+import io.github.kosmologist.a8minutes.Activities.MainActivity;
 import io.github.kosmologist.a8minutes.R;
 
 public class ClassicInstructionsActivity extends AppCompatActivity {

@@ -9,22 +9,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity" />
-        <activity android:name=".SplashActivity">
+        <activity android:name=".Activities.MainActivity" />
+        <activity android:name=".Activities.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ClassicExercise.ClassicInstructionsActivity" />
-        <activity android:name=".ClassicExercise.ListOfExerciseActivity" />
-        <activity android:name=".ClassicExercise.ClassicExerciseActivity" />
+        <activity android:name=".ClassicWorkout.ClassicInstructionsActivity" />
+        <activity android:name=".ClassicWorkout.ListOfExerciseActivity" />
+        <activity android:name=".ClassicWorkout.ClassicExerciseActivity" />
         <activity android:name=".AbsWorkout.ListOfAbsExercisesActivity" />
         <activity android:name=".AbsWorkout.AbsExerciseActivity" />
-        <activity android:name=".abs.ListOfAbsExercisesActivity" />
-        <activity android:name=".abs.AbsInstructionsActivity" />
-        <activity android:name=".abs.AbsExerciseActivity"></activity>
+        <activity android:name=".AbsWorkout.ListOfAbsExercisesActivity" />
+        <activity android:name=".AbsWorkout.AbsInstructionsActivity" />
+        <activity android:name=".AbsWorkout.AbsExerciseActivity" />
+        <activity android:name=".ArmWorkout.ArmExerciseActivity" />
+        <activity android:name=".ArmWorkout.ArmInstructionsActivity" />
+        <activity android:name=".ArmWorkout.ListOfArmExerciseActivity" />
+        <activity android:name=".ButtWorkout.ButtExerciseActivity" />
+        <activity android:name=".ButtWorkout.ButtInstructionsActivity"></activity>
     </application>
 
 </manifest>

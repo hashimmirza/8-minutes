@@ -1,4 +1,4 @@
-package io.github.kosmologist.a8minutes;
+package io.github.kosmologist.a8minutes.Activities;
 
 import android.content.res.Configuration;
 import android.os.Bundle;

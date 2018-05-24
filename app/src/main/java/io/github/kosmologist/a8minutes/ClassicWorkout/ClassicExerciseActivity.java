@@ -1,4 +1,4 @@
-package io.github.kosmologist.a8minutes.ClassicExercise;
+package io.github.kosmologist.a8minutes.ClassicWorkout;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -9,18 +9,17 @@ import android.speech.tts.TextToSpeech;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.Locale;
 
-import io.github.kosmologist.a8minutes.MainActivity;
 import io.github.kosmologist.a8minutes.R;
 import pl.droidsonroids.gif.GifImageView;
 
@@ -37,7 +36,8 @@ public class ClassicExerciseActivity extends AppCompatActivity implements TextTo
     public int exeNum = 0;
     public MediaPlayer mp ;
     int hash=0;
-
+    Boolean goToInstructions = false ;
+    CountDownTimer countDownTimer;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,13 +53,45 @@ public class ClassicExerciseActivity extends AppCompatActivity implements TextTo
                 AlertDialogCreate();
             }
         });
-
         textToSpeech = new TextToSpeech(ClassicExerciseActivity.this, ClassicExerciseActivity.this);
         setUpUI(16000);
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+       MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.instructions_menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
 
-    public void setUpUI(final long startTime) {
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.menu_instructions:
+                AlertDialogCreate();
+                goToInstructions = true;
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
+    @Override
+    public void onDestroy() {
+        countDownTimer.cancel();
+        textToSpeech.shutdown();
+        super.onDestroy();
+    }
+
+    @Override
+    public void onBackPressed() {
+        AlertDialogCreate();
+    }
+
+    public void setUpUI(final long startTime)
+
+    {
         exeName = findViewById(R.id.exerciseName);
         num = findViewById(R.id.tvNum);
         ready = findViewById(R.id.ready);
@@ -68,7 +100,9 @@ public class ClassicExerciseActivity extends AppCompatActivity implements TextTo
         GifImageView gifImageView = findViewById(R.id.gifImageView);
         progressBar.setProgress(0);
         final long time = startTime;
-        if (startTime == 16000) {
+
+        if (startTime == 16000)
+        {
             if (exeRestNum == 0) {
                 ready.setText("Make Yourself Ready !");
                 setTempSpeech("Make yourself ready . exercise 1 of 13 Jumping jacks ");
@@ -146,7 +180,7 @@ public class ClassicExerciseActivity extends AppCompatActivity implements TextTo
                 setTempSpeech("Make yourself ready . exercise 13 of 13 side plank left");
                 speek();
             } else {
-                finish();
+                CongoDialogCreate();
             }
         }
         if (startTime == 31000) {
@@ -154,8 +188,8 @@ public class ClassicExerciseActivity extends AppCompatActivity implements TextTo
             mp.start();
         }
 
-
-        CountDownTimer countDownTimer = new CountDownTimer(time, 1000) {
+        countDownTimer = new CountDownTimer(time, 1000)
+        {
 
             private void endSpeeking(){
                 cancel();
@@ -213,10 +247,7 @@ public class ClassicExerciseActivity extends AppCompatActivity implements TextTo
                         progress = (int) (progress + 3.5);
                         progressBar.setProgress(progress);
                     }
-
                 }
-
-
             }
 
             @Override
@@ -254,12 +285,6 @@ public class ClassicExerciseActivity extends AppCompatActivity implements TextTo
     }
 
     @Override
-    public void onDestroy() {
-        textToSpeech.shutdown();
-        super.onDestroy();
-    }
-
-    @Override
     public void onInit(int Text2SpeechCurrentStatus) {
         if (Text2SpeechCurrentStatus == TextToSpeech.SUCCESS) {
             textToSpeech.setLanguage(Locale.US);
@@ -276,9 +301,27 @@ public class ClassicExerciseActivity extends AppCompatActivity implements TextTo
         tempSpeech = tempSpeech1;
     }
 
+    public void CongoDialogCreate(){
+        LayoutInflater factory = LayoutInflater.from(ClassicExerciseActivity.this);
+        final View view = factory.inflate(R.layout.sample, null);
+
+        new AlertDialog.Builder(ClassicExerciseActivity.this)
+                .setView(view)
+                .setPositiveButton("OK",null)
+                .setPositiveButton("ok", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        countDownTimer.cancel();
+                        finish();
+                    }
+                }).show();
+    }
+
+
+
+
 
     public void AlertDialogCreate(){
-
         new AlertDialog.Builder(ClassicExerciseActivity.this)
                 .setIcon(R.mipmap.ic_launcher)
                 .setTitle("8 MINUTES")
@@ -291,11 +334,18 @@ public class ClassicExerciseActivity extends AppCompatActivity implements TextTo
                     public void onClick(DialogInterface dialog, int which)
                     {
                         setTempSpeech("");
-                        if (mp != null){
-
+                        if (mp != null )
+                        {
                             mp.stop();
+                            mp.pause();
                         }
+                        countDownTimer.cancel();
                         finish();
+                        if (goToInstructions.booleanValue() == true  ){
+                            goToInstructions= false;
+                            Intent intent = new Intent(ClassicExerciseActivity.this, ClassicInstructionsActivity.class);
+                            startActivity(intent);
+                        }
 
                     }
                 })
@@ -307,4 +357,5 @@ public class ClassicExerciseActivity extends AppCompatActivity implements TextTo
                     }
                 }).show();
     }
+
 }

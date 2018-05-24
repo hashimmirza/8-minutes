@@ -4,6 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="io.github.kosmologist.a8minutes.abs.AbsInstructionsActivity">
+    tools:context="io.github.kosmologist.a8minutes.AbsWorkout.AbsInstructionsActivity">
 
 </android.support.constraint.ConstraintLayout>
