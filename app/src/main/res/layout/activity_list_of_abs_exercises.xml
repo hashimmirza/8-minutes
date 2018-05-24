@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="io.github.kosmologist.a8minutes.AbsWorkout.ListOfAbsExercisesActivity">
+
     <RelativeLayout
         android:id="@+id/hash"
         android:layout_above="@+id/btnGO"

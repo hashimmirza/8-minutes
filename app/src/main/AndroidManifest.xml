@@ -33,7 +33,13 @@
         <activity android:name=".ButtWorkout.ListOfButtExerciseActivity" />
         <activity android:name=".LegWorkout.LegExerciseActivity" />
         <activity android:name=".LegWorkout.LegInstructionsActivity" />
-        <activity android:name=".LegWorkout.ListOfLegExerciseActivity"></activity>
+        <activity android:name=".LegWorkout.ListOfLegExerciseActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".Activities.AllInstructionsActivity"></activity>
     </application>
 
 </manifest>

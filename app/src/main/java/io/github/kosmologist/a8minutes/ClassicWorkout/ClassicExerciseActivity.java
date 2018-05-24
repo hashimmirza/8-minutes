@@ -50,6 +50,7 @@ public class ClassicExerciseActivity extends AppCompatActivity implements TextTo
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 AlertDialogCreate();
             }
         });

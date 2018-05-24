@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -51,7 +52,9 @@ public class MainActivity extends AppCompatActivity {
 
         android.support.v7.widget.Toolbar toolbar =findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
         getSupportActionBar().setTitle("8 MINUTES");
+
         toolbar.setTitleTextColor(Color.parseColor("#ffffff"));
 
 
@@ -159,4 +162,18 @@ public class MainActivity extends AppCompatActivity {
         inflater.inflate(R.menu.options_menus,menu);
         return super.onCreateOptionsMenu(menu);
     }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.instructions:
+                Intent intent = new Intent(MainActivity.this
+                        , AllInstructionsActivity.class);
+                startActivity(intent);
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
 }
