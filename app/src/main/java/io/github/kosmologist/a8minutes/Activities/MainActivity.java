@@ -13,8 +13,14 @@ import android.widget.ImageView;
 import com.squareup.picasso.Picasso;
 import com.squareup.picasso.PicassoProvider;
 
+import io.github.kosmologist.a8minutes.ArmWorkout.ArmInstructionsActivity;
+import io.github.kosmologist.a8minutes.ArmWorkout.ListOfArmExerciseActivity;
+import io.github.kosmologist.a8minutes.ButtWorkout.ButtInstructionsActivity;
+import io.github.kosmologist.a8minutes.ButtWorkout.ListOfButtExerciseActivity;
 import io.github.kosmologist.a8minutes.ClassicWorkout.ClassicInstructionsActivity;
 import io.github.kosmologist.a8minutes.ClassicWorkout.ListOfExerciseActivity;
+import io.github.kosmologist.a8minutes.LegWorkout.LegInstructionsActivity;
+import io.github.kosmologist.a8minutes.LegWorkout.ListOfLegExerciseActivity;
 import io.github.kosmologist.a8minutes.R;
 import io.github.kosmologist.a8minutes.AbsWorkout.AbsInstructionsActivity;
 import io.github.kosmologist.a8minutes.AbsWorkout.ListOfAbsExercisesActivity;
@@ -40,7 +46,6 @@ public class MainActivity extends AppCompatActivity {
         ImageView buttImage =findViewById(R.id.ButtImg);
         Picasso.get().load(R.drawable.butts).into(buttImage);
 
-
         ImageView LegImage =findViewById(R.id.legImg);
         Picasso.get().load(R.drawable.legsworkout).into(LegImage);
 
@@ -48,6 +53,8 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("8 MINUTES");
         toolbar.setTitleTextColor(Color.parseColor("#ffffff"));
+
+
         Button btnClassicInstructions =findViewById(R.id.btnInstructions);
         btnClassicInstructions.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -66,6 +73,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
         Button btnAbsInstructions = findViewById(R.id.btnAbsInstructions);
         btnAbsInstructions.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,6 +82,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
         Button btnAbsStart = findViewById(R.id.btnAbsStart);
         btnAbsStart.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -82,7 +91,67 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button btnArmStart = findViewById(R.id.btnArmStart);
+        btnArmStart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,ListOfArmExerciseActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+        Button btnArmInstructions = findViewById(R.id.btnArmInstructions);
+        btnArmInstructions.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ArmInstructionsActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button btnButtStart = findViewById(R.id.btnButtStart);
+        btnButtStart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,ListOfButtExerciseActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+        Button btnButtInstructions = findViewById(R.id.btnButtInstructions);
+        btnButtInstructions.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ButtInstructionsActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button btnLegStart = findViewById(R.id.btnLegStart);
+        btnLegStart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,ListOfLegExerciseActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+        Button btnLegInstructions = findViewById(R.id.btnLegInstructions);
+        btnLegInstructions.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, LegInstructionsActivity.class);
+                startActivity(intent);
+            }
+        });
     }
+
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

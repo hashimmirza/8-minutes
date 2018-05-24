@@ -29,7 +29,11 @@
         <activity android:name=".ArmWorkout.ArmInstructionsActivity" />
         <activity android:name=".ArmWorkout.ListOfArmExerciseActivity" />
         <activity android:name=".ButtWorkout.ButtExerciseActivity" />
-        <activity android:name=".ButtWorkout.ButtInstructionsActivity"></activity>
+        <activity android:name=".ButtWorkout.ButtInstructionsActivity" />
+        <activity android:name=".ButtWorkout.ListOfButtExerciseActivity" />
+        <activity android:name=".LegWorkout.LegExerciseActivity" />
+        <activity android:name=".LegWorkout.LegInstructionsActivity" />
+        <activity android:name=".LegWorkout.ListOfLegExerciseActivity"></activity>
     </application>
 
 </manifest>
