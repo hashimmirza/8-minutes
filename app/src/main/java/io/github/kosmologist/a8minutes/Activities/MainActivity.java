@@ -8,6 +8,10 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
+
+import com.squareup.picasso.Picasso;
+import com.squareup.picasso.PicassoProvider;
 
 import io.github.kosmologist.a8minutes.ClassicWorkout.ClassicInstructionsActivity;
 import io.github.kosmologist.a8minutes.ClassicWorkout.ListOfExerciseActivity;
@@ -21,6 +25,25 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        ImageView imageView = findViewById(R.id.imageView);
+        Picasso.get().load(R.drawable.workout).into(imageView);
+
+        ImageView absImage =findViewById(R.id.absImg);
+        Picasso.get().load(R.drawable.absworkout).into(absImage);
+
+
+        ImageView armImage =findViewById(R.id.armImg);
+        Picasso.get().load(R.drawable.arms).into(armImage);
+
+
+        ImageView buttImage =findViewById(R.id.ButtImg);
+        Picasso.get().load(R.drawable.butts).into(buttImage);
+
+
+        ImageView LegImage =findViewById(R.id.legImg);
+        Picasso.get().load(R.drawable.legsworkout).into(LegImage);
+
         android.support.v7.widget.Toolbar toolbar =findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("8 MINUTES");
