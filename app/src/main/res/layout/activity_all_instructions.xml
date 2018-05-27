@@ -19,7 +19,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="87dp"
-        android:background="@drawable/logo" />
+        android:background="@drawable/logoo" />
 
     <TextView
         android:id="@+id/tvClassic"
@@ -30,10 +30,11 @@
         android:text="Classic"
         android:textSize="15dp"
         android:textStyle="bold"
-        android:textColor="@android:color/background_dark"
+        android:textColor="#ff8c00"
         />
 
     <LinearLayout
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/tvClassic"
@@ -59,7 +60,7 @@
 
                 <TextView
 
-                    android:textColor="@android:color/background_dark"
+                    android:textColor="#ff8c00"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/btnAbsIconInstructions"
@@ -85,7 +86,7 @@
 
                 <TextView
 
-                    android:textColor="@android:color/background_dark"
+                    android:textColor="#ff8c00"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/btnButtIconInstructions"
@@ -119,8 +120,7 @@
                     android:background="@drawable/arm_icon" />
 
                 <TextView
-
-                    android:textColor="@android:color/background_dark"
+                    android:textColor="#ff8c00"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/btnArmIconInstructions"
@@ -145,7 +145,7 @@
                     android:background="@drawable/leg_icon" />
 
                 <TextView
-                    android:textColor="@android:color/background_dark"
+                    android:textColor="#ff8c00"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/btnLegIconInstructions"

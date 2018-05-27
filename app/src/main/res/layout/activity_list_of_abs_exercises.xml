@@ -9,7 +9,7 @@
 
     <RelativeLayout
         android:id="@+id/hash"
-        android:layout_above="@+id/btnGO"
+        android:layout_above="@+id/btnAbsGO"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <ScrollView
@@ -615,6 +615,7 @@
 
                     <RelativeLayout
                         android:id="@+id/RL14"
+                        android:layout_marginBottom="15dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/RL13"

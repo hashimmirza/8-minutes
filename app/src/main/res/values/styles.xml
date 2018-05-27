@@ -5,6 +5,7 @@
         <!-- Customize your theme here. -->
         <item name="colorPrimary">#FF8C00</item>
         <item name="colorPrimaryDark">#FF8C00</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
         <item name="colorAccent">#FF8C00</item>
     </style>
 
