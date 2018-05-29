@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="io.github.kosmologist.a8minutes">
 
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -39,7 +40,8 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
-        <activity android:name=".Activities.AllInstructionsActivity"></activity>
+        <activity android:name=".Activities.AllInstructionsActivity" />
+        <activity android:name=".Activities.AboutUsActivity"></activity>
     </application>
 
 </manifest>

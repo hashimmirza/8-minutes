@@ -54,7 +54,7 @@
                         android:textSize="15sp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="1/13 : Jumming Jacks "
+                        android:text="1/12 : Squats "
                         android:textStyle="bold"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"/>
@@ -65,13 +65,13 @@
                         android:layout_height="150dp"
                         android:layout_below="@+id/title1"
                         android:layout_centerHorizontal="true"
-                        android:src="@drawable/jumpingjacks"/>
+                        android:src="@drawable/squats"/>
                     <TextView
                         android:layout_margin="12dp"
                         android:layout_below="@+id/img1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Start with your feet and your arms by your sides,then jump up with your feet apart and your hands oveerhead. Return to the start position then do the next rep. This exercise provides a full body workout. "/>
+                        android:text="Stand with your feet shoulder width apart and your arms stretched forward, then lower your body until your thighs are parallel with the floor. Your knees should be extended in the same direction as your toes. Return to the start position and do the next rep. This works the thighs, hips buttocks, quads, hamstrings and lower body."/>
                 </RelativeLayout>
             </android.support.v7.widget.CardView>
 
@@ -97,7 +97,7 @@
                         android:textSize="15sp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="2/13 : Wall Sit "
+                        android:text="2/12 : Froggy Glute Lifts "
                         android:textStyle="bold"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"/>
@@ -108,13 +108,14 @@
                         android:layout_height="150dp"
                         android:layout_below="@+id/title2"
                         android:layout_centerHorizontal="true"
-                        android:src="@drawable/wallsit1"/>
+                        android:src="@drawable/froggy_glute_lifts"/>
                     <TextView
                         android:layout_margin="12dp"
                         android:layout_below="@+id/img2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Start with your back against the wall, then slide down until your knees are at a 90 degree angle. Keep your back against the wall with your hands and arms away from legs. Hold the position.  The exercise is to strengthen the quadriceps muscles."/>
+                        android:text="Lie on your stomach with your knees bent and heels squeezed together. Then lift your feet up and down.The Exercise is very at squeezing your butt."
+                        />
                 </RelativeLayout>
             </android.support.v7.widget.CardView>
 
@@ -141,7 +142,7 @@
                         android:textSize="15sp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="3/13 : Push up's "
+                        android:text="3/12 : Lunges "
                         android:textStyle="bold"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"/>
@@ -152,8 +153,10 @@
                         android:layout_height="150dp"
                         android:layout_below="@+id/title3"
                         android:layout_centerHorizontal="true"
-                        android:src="@drawable/pushup"/>
+                        android:src="@drawable/lunge"/>
                     <TextView
+                        android:layout_margin="12dp"
+                        android:text="Stand with your feet shoulder width apart and your hands on your hips. Take a step forward with your right leg and lower your body until your rigth thigh is parallel with the floor. Then return and switch to the other leg. this exercise strengthens the quadriceps, gluteus maximus and hamstrings."
                         android:layout_below="@+id/img3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
@@ -183,7 +186,7 @@
                         android:textSize="15sp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="4/13 : Abdominal Crunches "
+                        android:text="4/12 : Butt Bridge "
                         android:textStyle="bold"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"/>
@@ -194,8 +197,10 @@
                         android:layout_height="150dp"
                         android:layout_below="@+id/title4"
                         android:layout_centerHorizontal="true"
-                        android:src="@drawable/abdominalescrunch"/>
+                        android:src="@drawable/butt_bridge"/>
                     <TextView
+                        android:layout_margin="12dp"
+                        android:text="Lie on the floor , bend your legs . Then lift your hips off the floor. Keep doing it, this exercise works on your abdomen and hips."
                         android:layout_below="@+id/img4"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
@@ -224,7 +229,7 @@
                         android:textSize="15sp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="5/13 : Step up (On chair) "
+                        android:text="5/12 : Donkey Kick Left "
                         android:textStyle="bold"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"/>
@@ -235,8 +240,10 @@
                         android:layout_height="150dp"
                         android:layout_below="@+id/title5"
                         android:layout_centerHorizontal="true"
-                        android:src="@drawable/stepup"/>
+                        android:src="@drawable/donkey_kick"/>
                     <TextView
+                        android:layout_margin="12dp"
+                        android:text="Start on all four with your knees under your butt and your hands under your shoulders. Then lift your left leg and squeeze your butt as much as you can. Go back to start position and repeat the exercise."
                         android:layout_below="@+id/img5"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
@@ -265,7 +272,7 @@
                         android:textSize="15sp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="6/13 : Squats "
+                        android:text="6/12 : Donkey Kicks Right "
                         android:textStyle="bold"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"/>
@@ -276,8 +283,10 @@
                         android:layout_height="150dp"
                         android:layout_below="@+id/title6"
                         android:layout_centerHorizontal="true"
-                        android:src="@drawable/squats"/>
+                        android:src="@drawable/donkey_kick"/>
                     <TextView
+                        android:layout_margin="12dp"
+                        android:text="Start on all four with your knees under your butt and your hands under your shoulders. Then lift your Right leg and squeeze your butt as much as you can. Go back to start position and repeat the exercise."
                         android:layout_below="@+id/img6"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
@@ -306,7 +315,7 @@
                         android:textSize="15sp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="7/13 : Triceps Dips "
+                        android:text="7/12 : Split Squat Right "
                         android:textStyle="bold"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"/>
@@ -317,8 +326,10 @@
                         android:layout_height="150dp"
                         android:layout_below="@+id/title7"
                         android:layout_centerHorizontal="true"
-                        android:src="@drawable/tricepsdips"/>
+                        android:src="@drawable/split_squats"/>
                     <TextView
+                        android:layout_margin="12dp"
+                        android:text="Take a big step forward with your right leg and keep your upper body stright. Then make your body go stright down and up."
                         android:layout_below="@+id/img7"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
@@ -347,7 +358,7 @@
                         android:textSize="15sp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="8/13 : Plank "
+                        android:text="8/12 : Split Squats Left "
                         android:textStyle="bold"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"/>
@@ -358,8 +369,10 @@
                         android:layout_height="150dp"
                         android:layout_below="@+id/title8"
                         android:layout_centerHorizontal="true"
-                        android:src="@drawable/plank"/>
+                        android:src="@drawable/split_squats"/>
                     <TextView
+                        android:layout_margin="12dp"
+                        android:text="Take a big step forward with your left leg and keep your upper body stright. Then make your body go stright down and up."
                         android:layout_below="@+id/img8"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
@@ -388,7 +401,7 @@
                         android:textSize="15sp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="9/13 : High Stepping "
+                        android:text="9/12 : Plie Squats "
                         android:textStyle="bold"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"/>
@@ -399,8 +412,10 @@
                         android:layout_height="150dp"
                         android:layout_below="@+id/title9"
                         android:layout_centerHorizontal="true"
-                        android:src="@drawable/highknees"/>
+                        android:src="@drawable/plie_squats"/>
                     <TextView
+                        android:layout_margin="12dp"
+                        android:text="Start in the Squats postions and do show as above."
                         android:layout_below="@+id/img9"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
@@ -429,7 +444,7 @@
                         android:textSize="15sp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="10/13 : Lunges "
+                        android:text="10/12 : Booty Squeeze Left "
                         android:textStyle="bold"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"/>
@@ -440,8 +455,10 @@
                         android:layout_height="150dp"
                         android:layout_below="@+id/title10"
                         android:layout_centerHorizontal="true"
-                        android:src="@drawable/lunge"/>
+                        android:src="@drawable/booty_squeeze"/>
                     <TextView
+                        android:layout_margin="12dp"
+                        android:text="Start on all fours with your knees under your butt and hands under your shoulders. Then lift your left leg to the side at 90 degree angle and squeeze. "
                         android:layout_below="@+id/img10"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
@@ -470,7 +487,7 @@
                         android:textSize="15sp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="11/13 : Push up's with Rotation "
+                        android:text="11/12 : Booty squeeze Right "
                         android:textStyle="bold"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"/>
@@ -481,8 +498,10 @@
                         android:layout_height="150dp"
                         android:layout_below="@+id/title11"
                         android:layout_centerHorizontal="true"
-                        android:src="@drawable/pushuprotaion"/>
+                        android:src="@drawable/booty_squeeze"/>
                     <TextView
+                        android:layout_margin="12dp"
+                        android:text="Start on all fours with your knees under your butt and hands under your shoulders. Then lift your Right leg to the side at 90 degree angle and squeeze. "
                         android:layout_below="@+id/img11"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
@@ -495,6 +514,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="14dp"
+                android:layout_marginBottom="15dp"
                 android:layout_marginRight="14dp"
                 android:layout_marginTop="10dp"
                 android:background="#ffffff"
@@ -511,7 +531,7 @@
                         android:textSize="15sp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="12/13 : Side Plank Right "
+                        android:text="12/12 : Sumo Squat Calf Raises "
                         android:textStyle="bold"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"/>
@@ -522,55 +542,15 @@
                         android:layout_height="150dp"
                         android:layout_below="@+id/title12"
                         android:layout_centerHorizontal="true"
-                        android:src="@drawable/sideplankright"/>
+                        android:src="@drawable/sumo_squat_calf_raises"/>
                     <TextView
+                        android:layout_margin="12dp"
+                        android:text="Stand with your hands on your hips and feet a little wider than shoulder width apart. Then lower your body until your thighs are parallel to the floor. Lift your heels up and down. "
                         android:layout_below="@+id/img12"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
                 </RelativeLayout>
             </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:id="@+id/exe13"
-                android:layout_below="@+id/exe12"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="14dp"
-                android:layout_marginRight="14dp"
-                android:layout_marginTop="10dp"
-                android:background="#ffffff"
-                android:elevation="10dp"
-                android:padding="0dp"
-                app:cardCornerRadius="6dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <TextView
-                        android:id="@+id/title13"
-                        android:textSize="15sp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="13/13 : Side Plank Left "
-                        android:textStyle="bold"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginTop="10dp"/>
-
-                    <pl.droidsonroids.gif.GifImageView
-                        android:id="@+id/img13"
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:layout_below="@+id/title13"
-                        android:layout_centerHorizontal="true"
-                        android:src="@drawable/sideplank"/>
-                    <TextView
-                        android:layout_below="@+id/img13"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
-                </RelativeLayout>
-            </android.support.v7.widget.CardView>
-
 
         </RelativeLayout>
 

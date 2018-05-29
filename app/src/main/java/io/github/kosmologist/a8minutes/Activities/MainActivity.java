@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -11,6 +12,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.InterstitialAd;
 import com.squareup.picasso.Picasso;
 import com.squareup.picasso.PicassoProvider;
 
@@ -27,11 +32,24 @@ import io.github.kosmologist.a8minutes.AbsWorkout.AbsInstructionsActivity;
 import io.github.kosmologist.a8minutes.AbsWorkout.ListOfAbsExercisesActivity;
 
 public class MainActivity extends AppCompatActivity {
-
+    private InterstitialAd mInterstitialAd;
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+
+
+        mInterstitialAd = new InterstitialAd(this);
+        mInterstitialAd.setAdUnitId("ca-app-pub-3940256099942544/1033173712");
+        mInterstitialAd.loadAd(new AdRequest.Builder().build());
+
+
+        AdView mAdView = findViewById(R.id.adMainView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
 
         ImageView imageView = findViewById(R.id.imageView);
         Picasso.get().load(R.drawable.workout).into(imageView);
@@ -72,8 +90,20 @@ public class MainActivity extends AppCompatActivity {
         btnStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, ListOfExerciseActivity.class);
-                startActivity(intent);
+                if (mInterstitialAd.isLoaded()) {
+                    mInterstitialAd.show();
+                    mInterstitialAd.setAdListener(new AdListener(){
+                        @Override
+                        public void onAdClosed() {
+
+                            Intent intent = new Intent(MainActivity.this, ListOfExerciseActivity.class);
+                            startActivity(intent);
+                        }
+                    });
+                } else {
+                    Intent intent = new Intent(MainActivity.this, ListOfExerciseActivity.class);
+                    startActivity(intent);
+                }
             }
         });
 
@@ -90,8 +120,20 @@ public class MainActivity extends AppCompatActivity {
         btnAbsStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,ListOfAbsExercisesActivity.class);
-                startActivity(intent);
+                if (mInterstitialAd.isLoaded()) {
+                    mInterstitialAd.show();
+                    mInterstitialAd.setAdListener(new AdListener(){
+                        @Override
+                        public void onAdClosed() {
+
+                            Intent intent = new Intent(MainActivity.this, ListOfAbsExercisesActivity.class);
+                            startActivity(intent);
+                        }
+                    });
+                } else {
+                    Intent intent = new Intent(MainActivity.this, ListOfAbsExercisesActivity.class);
+                    startActivity(intent);
+                }
             }
         });
 
@@ -99,8 +141,20 @@ public class MainActivity extends AppCompatActivity {
         btnArmStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,ListOfArmExerciseActivity.class);
-                startActivity(intent);
+                if (mInterstitialAd.isLoaded()) {
+                    mInterstitialAd.show();
+                    mInterstitialAd.setAdListener(new AdListener(){
+                        @Override
+                        public void onAdClosed() {
+
+                            Intent intent = new Intent(MainActivity.this, ListOfArmExerciseActivity.class);
+                            startActivity(intent);
+                        }
+                    });
+                } else {
+                    Intent intent = new Intent(MainActivity.this, ListOfArmExerciseActivity.class);
+                    startActivity(intent);
+                }
             }
         });
 
@@ -117,9 +171,20 @@ public class MainActivity extends AppCompatActivity {
         Button btnButtStart = findViewById(R.id.btnButtStart);
         btnButtStart.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,ListOfButtExerciseActivity.class);
+            public void onClick(View view) {    if (mInterstitialAd.isLoaded()) {
+                mInterstitialAd.show();
+                mInterstitialAd.setAdListener(new AdListener(){
+                    @Override
+                    public void onAdClosed() {
+
+                        Intent intent = new Intent(MainActivity.this, ListOfButtExerciseActivity.class);
+                        startActivity(intent);
+                    }
+                });
+            } else {
+                Intent intent = new Intent(MainActivity.this, ListOfButtExerciseActivity.class);
                 startActivity(intent);
+            }
             }
         });
 
@@ -137,8 +202,21 @@ public class MainActivity extends AppCompatActivity {
         btnLegStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,ListOfLegExerciseActivity.class);
-                startActivity(intent);
+
+                if (mInterstitialAd.isLoaded()) {
+                    mInterstitialAd.show();
+                    mInterstitialAd.setAdListener(new AdListener(){
+                        @Override
+                        public void onAdClosed() {
+
+                            Intent intent = new Intent(MainActivity.this, ListOfLegExerciseActivity.class);
+                            startActivity(intent);
+                        }
+                    });
+                } else {
+                    Intent intent = new Intent(MainActivity.this, ListOfLegExerciseActivity.class);
+                    startActivity(intent);
+                }
             }
         });
 
@@ -170,6 +248,11 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this
                         , AllInstructionsActivity.class);
                 startActivity(intent);
+                return true;
+            case R.id.about:
+                Intent intent1 = new Intent(MainActivity.this
+                        , AboutUsActivity.class);
+                startActivity(intent1);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

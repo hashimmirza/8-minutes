@@ -94,6 +94,7 @@ public class ButtExerciseActivity extends AppCompatActivity implements TextToSpe
 
     public void setUpUI(final long startTime)
 
+
     {
         exeName = findViewById(R.id.buttExerciseName);
         num = findViewById(R.id.tvButtNum);
@@ -108,81 +109,78 @@ public class ButtExerciseActivity extends AppCompatActivity implements TextToSpe
         {
             if (exeRestNum == 0) {
                 ready.setText("Make Yourself Ready !");
-                setTempSpeech("Make yourself ready . exercise 1 of 13 Jumping jacks ");
+                exeName.setText("1/12 Squats");
+                gifImageView.setImageResource(R.drawable.squats);
+                setTempSpeech("Make yourself ready . exercise 1 of 12 squats ");
                 speek();
             } else if (exeRestNum == 1) {
                 ready.setText("Make Yourself Ready !");
-                exeName.setText("2/13 WALL SIT");
-                gifImageView.setImageResource(R.drawable.wallsit1);
-                setTempSpeech("Take Rest Make yourself ready . exercise 2 of 13 wall sit");
+                exeName.setText("2/12 Froggy Glute Lifts");
+                gifImageView.setImageResource(R.drawable.froggy_glute_lifts);
+                setTempSpeech("Take Rest Make yourself ready . exercise 2 of 12 froggy glute lifts");
                 speek();
             } else if (exeRestNum == 2) {
                 ready.setText("Make Yourself Ready !");
-                exeName.setText("3/13 PUSH UPS");
-                gifImageView.setImageResource(R.drawable.pushup);
-                setTempSpeech("Take rest Make yourself ready . exercise 3 of 13 push ups");
+                exeName.setText("3/12 Lunges");
+                gifImageView.setImageResource(R.drawable.lunge);
+                setTempSpeech("Take rest Make yourself ready . exercise 3 of 12 lunges");
                 speek();
             } else if (exeRestNum == 3) {
                 ready.setText("Make Yourself Ready !");
-                gifImageView.setImageResource(R.drawable.abdominalescrunch);
-                exeName.setText("4/13 Abdominal Crunchs");
-                setTempSpeech("Take rest Make yourself ready . exercise 4 of 13 Abdominal Crunchs");
+                gifImageView.setImageResource(R.drawable.butt_bridge);
+                exeName.setText("4/12 Butt Bridge");
+                setTempSpeech("Take rest Make yourself ready . exercise 4 of 12 Butt Bridge");
                 speek();
             } else if (exeRestNum == 4) {
                 ready.setText("Make Yourself Ready !");
-                gifImageView.setImageResource(R.drawable.stepup);
-                exeName.setText("5/13 STEP UP's");
-                setTempSpeech("take rest Make yourself ready . exercise 5 of 13 Step ups you can use chair");
+                gifImageView.setImageResource(R.drawable.donkey_kick);
+                exeName.setText("5/12 Donkey Kick Left");
+                setTempSpeech("take rest Make yourself ready . exercise 5 of 12 donkey kick left");
                 speek();
             } else if (exeRestNum == 5) {
                 ready.setText("Make Yourself Ready !");
-                exeName.setText("6/13 SQUATS");
-                gifImageView.setImageResource(R.drawable.squats);
-                setTempSpeech("take rest Make yourself ready . exercise 6 of 13 squats");
+                exeName.setText("6/12 Donkey Kick Right");
+                gifImageView.setImageResource(R.drawable.donkey_kick);
+                setTempSpeech("take rest Make yourself ready . exercise 6 of 12 donkey kick right");
                 speek();
             } else if (exeRestNum == 6) {
                 ready.setText("Make Yourself Ready !");
-                exeName.setText("7/13 TRICEPS DIPS");
-                gifImageView.setImageResource(R.drawable.tricepsdips);
-                setTempSpeech("take rest Make yourself ready . exercise 7 of 13 triceps dips");
+                exeName.setText("7/12 Split Squat Right");
+                gifImageView.setImageResource(R.drawable.split_squats);
+                setTempSpeech("take rest Make yourself ready . exercise 7 of 12 split squat right");
                 speek();
             } else if (exeRestNum == 7) {
                 ready.setText("Make Yourself Ready !");
-                exeName.setText("8/13 PLANK");
-                gifImageView.setImageResource(R.drawable.plank);
-                setTempSpeech("take rest Make yourself ready . exercise 8 of 13 Plank");
+                exeName.setText("8/12 Split Squat Left");
+                gifImageView.setImageResource(R.drawable.split_squats);
+                setTempSpeech("take rest Make yourself ready . exercise 8 of 12 split squat left");
                 speek();
             } else if (exeRestNum == 8) {
                 ready.setText("Make Yourself Ready !");
-                exeName.setText("9/13 HIGH STEPPING");
-                gifImageView.setImageResource(R.drawable.highknees);
-                setTempSpeech("take rest Make yourself ready . exercise 9 of 13 high stepping");
+                exeName.setText("9/12 Booty Squeeze Left");
+                gifImageView.setImageResource(R.drawable.booty_squeeze);
+                setTempSpeech("take rest Make yourself ready . exercise 9 of 12 booty squeeze left");
                 speek();
             } else if (exeRestNum == 9) {
                 ready.setText("Make Yourself Ready !");
-                exeName.setText("10/13 LUNGES");
-                gifImageView.setImageResource(R.drawable.lunge);
-                setTempSpeech("take rest Make yourself ready . exercise 10 of 13 lunges");
+                exeName.setText("10/12 booty squeeze right");
+                gifImageView.setImageResource(R.drawable.booty_squeeze);
+                setTempSpeech("take rest Make yourself ready . exercise 10 of 12 booty squeeze right");
                 speek();
             } else if (exeRestNum == 10) {
                 ready.setText("Make Yourself Ready !");
-                exeName.setText("11/13 PUSH-UP & ROTATION");
-                gifImageView.setImageResource(R.drawable.pushuprotaion);
-                setTempSpeech("take rest Make yourself ready . exercise 11 of 13 Push ups and rotation");
+                exeName.setText("11/12 Plie Squats");
+                gifImageView.setImageResource(R.drawable.plie_squats);
+                setTempSpeech("take rest Make yourself ready . exercise 11 of 12 plie squats");
                 speek();
             } else if (exeRestNum == 11) {
                 ready.setText("Make Yourself Ready !");
-                exeName.setText("12/13 SIDE PLANK RIGHT");
-                gifImageView.setImageResource(R.drawable.sideplankright);
-                setTempSpeech("Make yourself ready . exercise 12 of 13 Side plank right");
+                exeName.setText("12/12 Sumo Squat Calf Raises");
+                gifImageView.setImageResource(R.drawable.sumo_squat_calf_raises);
+                setTempSpeech("Make yourself ready . exercise 12 of 12 sumo squat calf raises");
                 speek();
-            } else if (exeRestNum == 12) {
-                ready.setText("Make Yourself Ready !");
-                exeName.setText("13/13 SIDE PLANK LEFT");
-                gifImageView.setImageResource(R.drawable.sideplank);
-                setTempSpeech("Make yourself ready . exercise 13 of 13 side plank left");
-                speek();
-            } else {
+            }
+            else {
                 CongoDialogCreate();
             }
         }
