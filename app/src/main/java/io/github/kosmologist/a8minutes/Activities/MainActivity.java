@@ -16,6 +16,7 @@ import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.InterstitialAd;
+import com.google.android.gms.ads.MobileAds;
 import com.squareup.picasso.Picasso;
 import com.squareup.picasso.PicassoProvider;
 
@@ -38,11 +39,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-
-
+        MobileAds.initialize(this, "ca-app-pub-2545101987437373~9672289083");
         mInterstitialAd = new InterstitialAd(this);
-        mInterstitialAd.setAdUnitId("ca-app-pub-3940256099942544/1033173712");
+        mInterstitialAd.setAdUnitId("ca-app-pub-2545101987437373/9468043449");
         mInterstitialAd.loadAd(new AdRequest.Builder().build());
 
 
