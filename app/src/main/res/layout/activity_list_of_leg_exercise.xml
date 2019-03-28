@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="io.github.kosmologist.a8minutes.LegWorkout.ListOfLegExerciseActivity">
+    tools:context="io.github.kosmologist.workoutTrainer.LegWorkout.ListOfLegExerciseActivity">
 
     <RelativeLayout
         android:id="@+id/hash"

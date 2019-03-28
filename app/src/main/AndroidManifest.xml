@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="io.github.kosmologist.a8minutes">
-
+    package="io.github.kosmologist.workoutTrainer">
     <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="true"
@@ -37,7 +36,7 @@
 
         <meta-data
         android:name="com.google.android.gms.ads.APPLICATION_ID"
-        android:value="ca-app-pub-2545101987437373~9672289083"/>
+        android:value="ca-app-pub-2778443240863250~4466884855"/>
 
         <meta-data
             android:name="preloaded_fonts"

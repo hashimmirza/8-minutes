@@ -5,7 +5,7 @@
     android:background="#ffffff"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="io.github.kosmologist.a8minutes.ButtWorkout.ButtExerciseActivity">
+    tools:context="io.github.kosmologist.workoutTrainer.ButtWorkout.ButtExerciseActivity">
     <android.support.v7.widget.Toolbar
         android:id="@+id/buttToolbar"
         android:layout_width="match_parent"

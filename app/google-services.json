@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:508816173038:android:8273741da0724126",
         "android_client_info": {
-          "package_name": "io.github.kosmologist.a8minutes"
+          "package_name": "io.github.kosmologist.workoutTrainer"
         }
       },
       "oauth_client": [
@@ -18,7 +18,7 @@
           "client_id": "508816173038-su7jgipnelr9771bv0dqb8ut4r5hqg47.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "io.github.kosmologist.a8minutes",
+            "package_name": "io.github.kosmologist.workoutTrainer",
             "certificate_hash": "0c16fcf2cae39fbef7a5973e82c6b5dfebf4f50b"
           }
         },

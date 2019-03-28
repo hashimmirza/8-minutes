@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="io.github.kosmologist.a8minutes.ClassicWorkout.ListOfExerciseActivity">
+    tools:context="io.github.kosmologist.workoutTrainer.ClassicWorkout.ListOfExerciseActivity">
 <RelativeLayout
     android:id="@+id/hash"
     android:layout_above="@+id/adClassicView"

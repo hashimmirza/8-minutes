@@ -1,4 +1,4 @@
-package io.github.kosmologist.a8minutes;
+package io.github.kosmologist.workoutTrainer;
 
 import org.junit.Test;
 

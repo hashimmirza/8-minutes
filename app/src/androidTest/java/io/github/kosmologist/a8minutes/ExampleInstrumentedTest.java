@@ -1,4 +1,4 @@
-package io.github.kosmologist.a8minutes;
+package io.github.kosmologist.workoutTrainer;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("io.github.kosmologist.a8minutes", appContext.getPackageName());
+        assertEquals("io.github.kosmologist.workoutTrainer", appContext.getPackageName());
     }
 }

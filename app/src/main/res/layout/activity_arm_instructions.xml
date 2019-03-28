@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="io.github.kosmologist.a8minutes.ArmWorkout.ArmInstructionsActivity">
+    tools:context="io.github.kosmologist.workoutTrainer.ArmWorkout.ArmInstructionsActivity">
     <android.support.v7.widget.Toolbar
         android:id="@+id/armInstructionToolbar"
         android:layout_width="match_parent"

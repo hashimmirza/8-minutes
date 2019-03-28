@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffffff"
-    tools:context="io.github.kosmologist.a8minutes.LegWorkout.LegInstructionsActivity">
+    tools:context="io.github.kosmologist.workoutTrainer.LegWorkout.LegInstructionsActivity">
     <android.support.v7.widget.Toolbar
         android:id="@+id/legInstructionToolbar"
         android:layout_width="match_parent"

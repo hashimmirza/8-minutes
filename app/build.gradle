@@ -4,7 +4,7 @@ apply plugin: 'io.fabric'
 android {
     compileSdkVersion 26
     defaultConfig {
-        applicationId "io.github.kosmologist.a8minutes"
+        applicationId "io.github.kosmologist.workoutTrainer"
         minSdkVersion 15
         targetSdkVersion 26
         versionCode 1
