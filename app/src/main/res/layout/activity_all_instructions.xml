@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:background="#fffff0"
     android:layout_height="match_parent"
-    tools:context="io.github.kosmologist.workoutTrainer.Activities.AllInstructionsActivity">
-    <android.support.v7.widget.Toolbar
+    tools:context="io.github.hashim.workoutTrainer.Activities.AllInstructionsActivity">
+    <androidx.appcompat.widget.Toolbar
         android:id="@+id/allInstToolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"

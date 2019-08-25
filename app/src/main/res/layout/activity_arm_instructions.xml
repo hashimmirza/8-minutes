@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="io.github.kosmologist.workoutTrainer.ArmWorkout.ArmInstructionsActivity">
-    <android.support.v7.widget.Toolbar
+    tools:context="io.github.hashim.workoutTrainer.ArmWorkout.ArmInstructionsActivity">
+    <androidx.appcompat.widget.Toolbar
         android:id="@+id/armInstructionToolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
@@ -33,7 +33,7 @@
             android:layout_height="match_parent"
             >
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:id="@+id/exe1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -73,9 +73,9 @@
                         android:layout_height="wrap_content"
                         android:text="Start with your feet and your shoulder width apart. Raise your arms to sides at shoulders. Repeat this exercise. "/>
                 </RelativeLayout>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:id="@+id/exe2"
                 android:layout_below="@+id/exe1"
                 android:layout_width="match_parent"
@@ -117,10 +117,10 @@
                         android:text="Lay prone on the ground with arms supporting your body.Keep your body stright while raising and lowering your body with your arms. This exercise works the chest, sholders, triceps, back and leg. "
                         />
                 </RelativeLayout>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:id="@+id/exe3"
                 android:layout_below="@+id/exe2"
                 android:layout_width="match_parent"
@@ -161,10 +161,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
                 </RelativeLayout>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:id="@+id/exe4"
                 android:layout_below="@+id/exe3"
                 android:layout_width="match_parent"
@@ -205,9 +205,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
                 </RelativeLayout>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:id="@+id/exe5"
                 android:layout_below="@+id/exe4"
                 android:layout_width="match_parent"
@@ -248,9 +248,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
                 </RelativeLayout>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:id="@+id/exe6"
                 android:layout_below="@+id/exe5"
                 android:layout_width="match_parent"
@@ -291,9 +291,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
                 </RelativeLayout>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:id="@+id/exe7"
                 android:layout_below="@+id/exe6"
                 android:layout_width="match_parent"
@@ -334,9 +334,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
                 </RelativeLayout>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:id="@+id/exe8"
                 android:layout_below="@+id/exe7"
                 android:layout_width="match_parent"
@@ -377,9 +377,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
                 </RelativeLayout>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:id="@+id/exe9"
                 android:layout_below="@+id/exe8"
                 android:layout_width="match_parent"
@@ -420,9 +420,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
                 </RelativeLayout>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:id="@+id/exe10"
                 android:layout_below="@+id/exe9"
                 android:layout_width="match_parent"
@@ -463,9 +463,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
                 </RelativeLayout>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:id="@+id/exe11"
                 android:layout_below="@+id/exe10"
                 android:layout_width="match_parent"
@@ -506,9 +506,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
                 </RelativeLayout>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:id="@+id/exe12"
                 android:layout_below="@+id/exe11"
                 android:layout_width="match_parent"
@@ -549,9 +549,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
                 </RelativeLayout>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:id="@+id/exe13"
                 android:layout_below="@+id/exe12"
                 android:layout_width="match_parent"
@@ -593,7 +593,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
                 </RelativeLayout>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
 
         </RelativeLayout>

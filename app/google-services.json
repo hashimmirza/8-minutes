@@ -1,52 +1,37 @@
 {
   "project_info": {
-    "project_number": "508816173038",
-    "firebase_url": "https://minutesworkout-c8554.firebaseio.com",
-    "project_id": "minutesworkout-c8554",
-    "storage_bucket": "minutesworkout-c8554.appspot.com"
+    "project_number": "396413700267",
+    "firebase_url": "https://minutes-1e312.firebaseio.com",
+    "project_id": "minutes-1e312",
+    "storage_bucket": "minutes-1e312.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:508816173038:android:8273741da0724126",
+        "mobilesdk_app_id": "1:396413700267:android:86bf23308a588305",
         "android_client_info": {
-          "package_name": "io.github.kosmologist.workoutTrainer"
+          "package_name": "io.github.hashim.workoutTrainer"
         }
       },
       "oauth_client": [
         {
-          "client_id": "508816173038-su7jgipnelr9771bv0dqb8ut4r5hqg47.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "io.github.kosmologist.workoutTrainer",
-            "certificate_hash": "0c16fcf2cae39fbef7a5973e82c6b5dfebf4f50b"
-          }
-        },
-        {
-          "client_id": "508816173038-0he6jvl0t91pv424o7rpc34cd3qruqp9.apps.googleusercontent.com",
+          "client_id": "396413700267-jt9b8k3egdr9slosfpoke3fju1indrtd.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBIQsPaTONx2nS0GGHJZAM-oYPUgwxeTxs"
+          "current_key": "AIzaSyCUs0CfbbiGCtXQDEGGEq8W96D7fAHVPN8"
         }
       ],
       "services": {
-        "analytics_service": {
-          "status": 1
-        },
         "appinvite_service": {
-          "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "508816173038-0he6jvl0t91pv424o7rpc34cd3qruqp9.apps.googleusercontent.com",
+              "client_id": "396413700267-jt9b8k3egdr9slosfpoke3fju1indrtd.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
-        },
-        "ads_service": {
-          "status": 2
         }
       }
     }

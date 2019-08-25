@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="io.github.kosmologist.workoutTrainer.ClassicWorkout.ListOfExerciseActivity">
+    tools:context="io.github.hashim.workoutTrainer.ClassicWorkout.ListOfExerciseActivity">
 <RelativeLayout
     android:id="@+id/hash"
     android:layout_above="@+id/adClassicView"
@@ -16,7 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:id="@+id/cardView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -619,7 +619,7 @@
                     android:padding="0dp"
                     android:text="Start >" />
             </RelativeLayout>
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
     </ScrollView>
 </RelativeLayout>
 

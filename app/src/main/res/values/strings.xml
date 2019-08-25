@@ -7,7 +7,7 @@
 
     <!-- Example General settings -->
     <string name="pref_header_general">General</string>
-    <string name="banner_ad_unit_id">ca-app-pub-2778443240863250/8765701445</string>
+    <string name="banner_ad_unit_id">ca-app-pub-74055/36676</string>
     <string name="pref_title_social_recommendations">Enable social recommendations</string>
     <string name="pref_description_social_recommendations">Recommendations for people to contact
         based on your message history

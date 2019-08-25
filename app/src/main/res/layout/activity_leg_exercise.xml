@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:background="#ffffff"
     android:layout_height="match_parent"
-    tools:context="io.github.kosmologist.workoutTrainer.LegWorkout.LegExerciseActivity">
-    <android.support.v7.widget.Toolbar
+    tools:context="io.github.hashim.workoutTrainer.LegWorkout.LegExerciseActivity">
+    <androidx.appcompat.widget.Toolbar
         android:id="@+id/legToolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"

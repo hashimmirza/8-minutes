@@ -6,8 +6,8 @@
     android:layout_height="match_parent"
     android:keepScreenOn="true"
     android:background="#ffffff"
-    tools:context="io.github.kosmologist.workoutTrainer.ClassicWorkout.ClassicExerciseActivity">
-    <android.support.v7.widget.Toolbar
+    tools:context="io.github.hashim.workoutTrainer.ClassicWorkout.ClassicExerciseActivity">
+    <androidx.appcompat.widget.Toolbar
         android:id="@+id/classicToolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
