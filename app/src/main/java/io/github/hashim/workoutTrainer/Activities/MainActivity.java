@@ -48,6 +48,8 @@ public class MainActivity extends AppCompatActivity {
         mAdView.loadAd(adRequest);
 
 
+
+
         ImageView imageView = findViewById(R.id.imageView);
         Picasso.get().load(R.drawable.workout).into(imageView);
 
