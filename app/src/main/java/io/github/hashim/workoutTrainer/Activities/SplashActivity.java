@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.WindowManager;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 import io.github.hashim.workoutTrainer.R;
 
 public class SplashActivity extends AppCompatActivity {
@@ -20,9 +22,18 @@ public class SplashActivity extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(SplashActivity.this, MainActivity.class);
-                startActivity(intent);
-                finish();
+
+
+                if (FirebaseAuth.getInstance().getCurrentUser()!=null){
+                    // Logged in already
+                    Intent intent = new Intent(SplashActivity.this, MainActivity.class);
+                    startActivity(intent);
+                    finish();
+                } else {
+                    Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
+                    startActivity(intent);
+                    finish();
+                }
             }
         }, 3000);
     }
