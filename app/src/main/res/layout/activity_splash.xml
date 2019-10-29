@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/images"
+android:background="#000000"
     android:layout_height="match_parent"
 
     tools:context="io.github.hashim.workoutTrainer.Activities.SplashActivity">
@@ -14,7 +14,7 @@
         android:layout_width="180dp"
         android:layout_height="180dp"
         android:layout_centerInParent="true"
-        android:src="@drawable/logoo" />
+        android:src="@drawable/logooooooooo" />
 
     <TextView
         android:id="@+id/textView"
@@ -22,11 +22,11 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/logo"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:fontFamily="@font/alegreya_sc_black"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_bold"
         android:text="8 Minutes"
-        android:textColor="#ff8c00"
-        android:textSize="40sp"
+        android:textColor="#ffffff"
+        android:textSize="35sp"
         android:textStyle="bold" />
 
     <TextView
@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true"
-        android:fontFamily="@font/alegreya_sc_black"
+        android:fontFamily="@font/poppins"
         android:text="#Let's WORKOUT"
         android:textColor="#ffffff" />
 

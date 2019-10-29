@@ -25,6 +25,7 @@
 <RelativeLayout
     android:layout_below="@+id/toolbar"
     android:layout_width="match_parent"
+    android:background="#ffffff"
     android:layout_height="match_parent">
 
     <androidx.cardview.widget.CardView
@@ -40,6 +41,7 @@
         app:cardCornerRadius="6dp">
 
         <RelativeLayout
+            android:background="#000000"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -64,14 +66,14 @@
                 android:id="@+id/tvDiscription"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif"
+                android:fontFamily="@font/poppins"
                 android:layout_alignLeft="@+id/btnInstructions"
                 android:layout_alignStart="@+id/btnInstructions"
                 android:layout_below="@+id/imageView"
                 android:layout_marginBottom="10dp"
                 android:layout_marginTop="12dp"
                 android:text="Scientifically proven to loss weight."
-                android:textColor="@android:color/background_dark" />
+                android:textColor="@color/white" />
 
             <Button
                 android:id="@+id/btnInstructions"

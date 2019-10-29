@@ -5,4 +5,9 @@
     <color name="colorAccent">#FF4081</color>
     <color name="nightBackground">#555555</color>
     <color name="dayBackground">#fffefe</color>
+    <color name="backgroundBlack">#000000</color>
+
+    <color name="orange">#ff8c00</color>
+
+    <color name="white">#ffffff</color>
 </resources>
