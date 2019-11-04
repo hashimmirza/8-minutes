@@ -22,18 +22,14 @@
         android:layout_height="180dp"
         android:src="@drawable/logooooooooo" />
 
-    <TextView
+    <ImageView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="320dp"
+        android:layout_height="100dp"
         android:layout_below="@+id/logo"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:fontFamily="@font/poppins_bold"
-        android:text="8 Minutes"
-        android:textColor="@color/browser_actions_bg_grey"
-        android:textSize="35sp"
-        android:textStyle="bold" />
+        android:background="@drawable/mint_white_trans"
+        />
 
     <TextView
         android:id="@+id/sub_title"

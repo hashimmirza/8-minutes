@@ -16,19 +16,14 @@ android:background="#000000"
         android:layout_centerInParent="true"
         android:src="@drawable/logooooooooo" />
 
-    <TextView
+    <ImageView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="320dp"
+        android:layout_height="100dp"
         android:layout_below="@+id/logo"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:fontFamily="@font/poppins_bold"
-        android:text="8 Minutes"
-        android:textColor="#ffffff"
-        android:textSize="35sp"
-        android:textStyle="bold" />
-
+        android:background="@drawable/mint_white_trans"
+        />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
